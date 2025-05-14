@@ -6,23 +6,26 @@ body
 }
 
 #containerFooter
-{
-    width: 100%;
-    background-color: rgb(29, 29, 29);
-    color: white;
-    letter-spacing: 1px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    text-transform: uppercase;
-    font-size: 15px;
-    padding: 15px 300px;
-    box-sizing: border-box;
+{   
+  font-size: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 25vh;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  padding: 0px 0;
+  display: flex;
+  justify-content:space-evenly ;
 }
 
 #webFooter
 {
-    padding-top: 30px;
-    font-size: 12px;
+  text-align:center ;
+  background: lightblue;
+  padding: 10px;
+  border: 1px solid #ccc;
+  
 }
 #credit 
 {
@@ -32,7 +35,6 @@ body
     text-align: center;
     background-color: rgb(29, 29, 29);
     color: white;
-    font-size: 11px;
     letter-spacing: 1px;
 }
 

@@ -15,7 +15,7 @@ body
 }
 #container
 {
-    background-color: white;
+    background-color: rgb(19, 18, 18);
     margin: auto;
     text-align: center;
     width: 100%;
@@ -39,12 +39,13 @@ body
 #shopName a
 {
     text-decoration: none;
-    color: rgb(29, 29, 29);
+    color: rgb(194, 24, 24);
 }
 #shopName > b
 {
     font-weight: 900;
     font: black;
+    
 }
 
 #collection {
@@ -59,7 +60,7 @@ body
 
 #collection a {
     text-decoration: none;
-    color: rgb(29, 29, 29);
+    color: rgb(221, 214, 214);
 }
 
 
@@ -96,7 +97,6 @@ body
 {
     outline: none;
 }
-
 
 /* ----------------------------- MEDIA QUERY --------------------------- */
 
