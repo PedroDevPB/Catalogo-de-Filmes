@@ -11,10 +11,10 @@ body
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 25vh;
+  height: auto;
   background-color: rgb(29, 29, 29);
   color: white;
-  padding: 0px 0;
+  padding: 20px 0;
   display: flex;
   justify-content:space-evenly ;
 }
@@ -23,6 +23,7 @@ body
 {
   text-align:center ;
   background: lightblue;
+  margin: auto;
   padding: 10px;
   border: 1px solid #ccc;
   
@@ -39,7 +40,7 @@ body
 }
 
 #credit a
-{
+{   
     color: white;
     text-decoration: none;
     position: relative;
@@ -60,10 +61,14 @@ transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 {
     height: calc(100% + 8px)
 }
+#containerFooter p{
+    margin-top: 10px;
+}
 
 #containerFooter a {
     color: white;
     text-decoration: none;
+    margin: auto;
 }
 
 #containerFooter a:hover {
