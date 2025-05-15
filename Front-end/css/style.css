@@ -19,3 +19,11 @@
   width: 100%;
   height: auto;
 }
+
+.categorias-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding-top: 100px    ;
+}

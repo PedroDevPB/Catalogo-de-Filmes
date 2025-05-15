@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nome": "Ação",
+    "descricao": "Filmes cheios de adrenalina e aventura."
+  },
+  {
+    "id": 2,
+    "nome": "Comédia",
+    "descricao": "Filmes para rir e se divertir."
+  },
+  {
+    "id": 3,
+    "nome": "Drama",
+    "descricao": "Filmes que tocam o coração."
+  },
+  {
+    "id": 4,
+    "nome": "Terror",
+    "descricao": "Filmes para quem gosta de sentir medo."
+  }
+]
+    
