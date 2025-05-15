@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "titulo": "O Senhor dos Anéis",
+    "descricao": "Uma jornada épica pela Terra Média.",
+    "imagem": "img/senhor-dos-aneis.jpg",
+    "categoria": "Fantasia"
+  },
+  {
+    "id": 2,
+    "titulo": "Interestelar",
+    "descricao": "Viagem no espaço e no tempo.",
+    "imagem": "img/interestelar.jpg",
+    "categoria": "Ficção Científica"
+  }
+]

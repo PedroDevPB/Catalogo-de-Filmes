@@ -1,0 +1,21 @@
+.catalogo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding-top: 100px    ;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  background-color: #111;
+  color: white;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
