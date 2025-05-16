@@ -50,3 +50,46 @@ function searchMovies() {
     card.style.display = corresponde ? 'block' : 'none';
   });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('filmes.json')
+    .then(res => res.json())
+    .then(filmes => {
+      const container = document.getElementById('categorias');
+      const categorias = {};
+
+      filmes.forEach(filme => {
+        const cat = filme.categoria;
+        if (!categorias[cat]) categorias[cat] = [];
+        categorias[cat].push(filme);
+      });
+
+      // Cria as seções e as categorias
+      for (const categoria in categorias) {
+        const secao = document.createElement('section');
+        secao.classList.add('categoria-bloco');
+
+        const titulo = document.createElement('h2');
+        titulo.textContent = categoria;
+        titulo.classList.add('titulo-categoria');
+
+        const linha = document.createElement('div');
+        linha.classList.add('linha-filmes');
+
+        categorias[categoria].forEach(filme => {
+          const card = document.createElement('div');
+          card.classList.add('card');
+
+          card.innerHTML = `
+            <img src="${filme.imagem}" alt="${filme.titulo}">
+            <h3>${filme.titulo}</h3>
+          `;
+          linha.appendChild(card);
+        });
+
+        secao.appendChild(titulo);
+        secao.appendChild(linha);
+        container.appendChild(secao);
+      }
+    });
+});

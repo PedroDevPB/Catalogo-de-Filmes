@@ -3,98 +3,98 @@
     "id": 1,
     "titulo": "O Senhor dos Anéis",
     "descricao": "Uma jornada épica pela Terra Média.",
-    "imagem": "Front-end/img/senhor-dos-aneis.jpg",
+    "imagem": "css/back.png",
     "categoria": "Fantasia"
   },
   {
     "id": 2,
     "titulo": "Interestelar",
     "descricao": "Viagem no espaço e no tempo.",
-    "imagem": "Front-end/img/interestelar.jpg",
+    "imagem": "css/back.png",
     "categoria": "Ficção Científica"
   },
   {
     "id": 3,
     "titulo": "A Origem",
     "descricao": "Um ladrão que entra nos sonhos das pessoas.",
-    "imagem": "Front-end/img/a-origem.jpg",
+    "imagem": "css/back.png",
     "categoria": "Ação"
   },
   {
     "id": 4,
     "titulo": "O Poderoso Chefão",
     "descricao": "A história de uma família mafiosa.",
-    "imagem": "Front-end/img/o-poderoso-chefao.jpg",
+    "imagem": "css/back.png",
     "categoria": "Drama"
   },
   {
     "id": 5,
     "titulo": "Matrix",
     "descricao": "Uma realidade simulada.",
-    "imagem": "Front-end/img/matrix.jpg",
+    "imagem": "css/back.png",
     "categoria": "Ficção Científica"
   },
   {
     "id": 6,
     "titulo": "O Rei Leão",
     "descricao": "A jornada de um jovem leão.",
-    "imagem": "Front-end/img/o-rei-leao.jpg",
+    "imagem": "css/back.png",
     "categoria": "Animação"
   },
   {
     "id": 7,
     "titulo": "Gladiador",
     "descricao": "Um general romano se torna gladiador.",
-    "imagem": "Front-end/img/gladiador.jpg",
+    "imagem": "css/back.png",
     "categoria": "Ação"
   },
   {
     "id": 8,
     "titulo": "Forrest Gump",
     "descricao": "A vida de um homem simples e suas aventuras.",
-    "imagem": "Front-end/img/forrest-gump.jpg",
+    "imagem": "css/back.png",
     "categoria": "Drama"
   },
   {
     "id": 9,
     "titulo": "Os Vingadores",
     "descricao": "Super-heróis se unem para salvar o mundo.",
-    "imagem": "Front-end/img/os-vingadores.jpg",
+    "imagem": "css/back.png",
     "categoria": "Ação"
   },
   {
     "id": 10,
     "titulo": "Harry Potter e a Pedra Filosofal",
     "descricao": "Um jovem bruxo descobre seu destino.",
-    "imagem": "Front-end/img/harry-potter.jpg",
+    "imagem": "css/back.png",
     "categoria": "Fantasia"
   },
   {
     "id": 11,
     "titulo": "O Silêncio dos Inocentes",
     "descricao": "Uma agente do FBI busca a ajuda de um serial killer.",
-    "imagem": "Front-end/img/o-silencio-dos-inocentes.jpg",
+    "imagem": "css/back.png",
     "categoria": "Suspense"
   },
   {
     "id": 12,
     "titulo": "A Rede Social",
     "descricao": "A criação do Facebook e suas consequências.",
-    "imagem": "Front-end/img/a-rede-social.jpg",
+    "imagem": "css/back.png",
     "categoria": "Drama"
   },
   {
     "id": 13,
     "titulo": "Coringa",
     "descricao": "A origem do icônico vilão da DC.",
-    "imagem": "Front-end/img/coringa.jpg",
+    "imagem": "css/back.png",
     "categoria": "Drama"
   },
   {
     "id": 14,
     "titulo": "O Exorcista",
     "descricao": "Um exorcismo aterrorizante.",
-    "imagem": "Front-end/img/o-exorcista.jpg",
+    "imagem": "css/back.png",
     "categoria": "Terror"
   }
 ]
