@@ -1,9 +1,15 @@
+body {
+  background-color: #8a8a8a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
 .catalogo-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
-  padding-top: 100px    ;
+  padding-top: 10px;
 }
 
 .card {
@@ -26,4 +32,26 @@
   gap: 16px;
   justify-content: center;
   padding-top: 100px    ;
+}
+
+#resultadosBusca {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.filme {
+  width: 200px;
+  text-align: center;
+}
+
+.filme img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card {
+  transition: all 0.3s ease;
 }

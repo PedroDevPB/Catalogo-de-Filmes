@@ -32,3 +32,21 @@ fetch('categorias.json')
       container.appendChild(card);
     });
   });
+
+// Função para buscar filmes com base no título
+function searchMovies() {
+  const input = document.getElementById('campo-busca');
+  const termoBusca = input.value.trim().toLowerCase();
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach(card => {
+    const titulo = card.querySelector('h3');
+    
+    if (!titulo) return;
+
+    const textoTitulo = titulo.textContent.toLowerCase();
+
+    const corresponde = textoTitulo.includes(termoBusca);
+    card.style.display = corresponde ? 'block' : 'none';
+  });
+}
