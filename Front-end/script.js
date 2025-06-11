@@ -1,4 +1,4 @@
-// --- Página index.html: renderiza todos os filmes ---
+// Página index.html
 const catalogo = document.getElementById('catalogo');
 
 if (catalogo) {
@@ -20,7 +20,25 @@ if (catalogo) {
     .catch(error => console.error("Erro ao carregar filmes:", error));
 }
 
-// --- Página categorias.html: agrupa por categoria ---
+// Função para buscar filmes
+function searchMovies() {
+  const input = document.getElementById('campo-busca');
+  const termoBusca = input.value.trim().toLowerCase();
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach(card => {
+    const titulo = card.querySelector('h3');
+    
+    if (!titulo) return;
+
+    const textoTitulo = titulo.textContent.toLowerCase();
+
+    const corresponde = textoTitulo.includes(termoBusca);
+    card.style.display = corresponde ? 'block' : 'none';
+  });
+}
+
+// Página categorias.html
 const categorias = document.getElementById('categorias');
 
 if (categorias) {
