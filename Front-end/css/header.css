@@ -1,210 +1,217 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body
-{       
-    margin: 0;   
+
+body {
+    margin: 0;
+    background-color: #141414; 
+    font-family: 'Lato', sans-serif;
+    color: #e5e5e5; 
 }
-#badge
-{
+
+#badge {
     position: absolute;
-    background-color: rgb(255, 30, 30);
+    background-color: #e50914; 
     color: white;
     border-radius: 50%;
     padding: 5px 8px;
     font-size: 14px;
     top: 33px;
-    right:110px;
+    right: 110px;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(229, 9, 20, 0.7);
 }
-#container
-{
-    background-color: rgb(29, 29, 29);
+
+#container {
+    background-color: #1c1c1c; 
     text-align: center;
     width: 100%;
     font-family: 'Lato', sans-serif;
     z-index: 1;
-    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149); 
+    box-shadow: 0 1px 4px rgba(0,0,0,0.8);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.header{
+.header {
     display: flex;
     flex-direction: row;
     align-content: center;
     flex-wrap: wrap;
-    padding: 2rem;
+    padding: 0;
     align-items: center;
     width: 100%;
     justify-content: space-between;
 }
 
-#shopName 
-{
-    font-size: 40px; 
+#shopName {
+    font-size: 40px;
     font-family: 'Lato', sans-serif;
-}
-#shopName a
-{
-    text-decoration: none;
-    color: rgb(194, 24, 24);
-}
-#shopName > b
-{
     font-weight: 900;
-    font: black;
-    
+}
+
+#shopName a {
+    text-decoration: none;
+    color: #e50914; 
+    transition: color 0.3s ease;
+}
+
+#shopName a:hover {
+    color: #b00610; 
 }
 
 #collection {
     font-weight: bold;
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-#collection > div {
-    margin-right: 20px; 
+#collection>div {
+    margin-right: 0;
 }
 
 #collection a {
     text-decoration: none;
-    color: rgb(221, 214, 214);
+    color: #e5e5e5;
+    transition: color 0.3s ease;
 }
 
+#collection a:hover {
+    color: #e50914;
+}
 
-.search
-{
+.search {
     padding: 14px;
-    /* color: gray; */
-    color: rgb(29, 29, 29);
+    color: #1c1c1c;
     min-width: 25px;
     text-align: center;
     position: absolute;
 }
 
-.addedToCart
-{
+.addedToCart {
     font-size: 1.5em;
     margin-right: 25px;
+    color: #e5e5e5;
 }
 
-#input 
-{
+#input {
     width: 35em;
     height: 3em;
     padding: 2px 50px;
-    background-color: rgb(241, 241, 241);
+    background-color: #333;
     border: none;
     border-radius: 5px;
+    color: #e5e5e5;
 }
-#input::placeholder
-{
+
+#input::placeholder {
     font-weight: bold;
+    color: #999;
 }
-#input:focus
-{
-    outline: none;
+
+#input:focus {
+    outline: 2px solid #e50914;
+    background-color: #444;
+    color: white;
 }
 
 /* ----------------------------- MEDIA QUERY --------------------------- */
 
-@media(max-width: 1300px)
-{
-    #collection
-    {
+@media(max-width: 1300px) {
+    #collection {
         font-size: 13px;
     }
-    #input 
-    {
+
+    #input {
         width: 25em;
     }
 }
-@media(max-width: 1212px)
-{
-    #collection
-    {
+
+@media(max-width: 1212px) {
+    #collection {
         font-size: 13px;
     }
-    #input 
-    {
+
+    #input {
         width: 20em;
     }
-    .addedToCart
-    {
+
+    .addedToCart {
         font-size: 1.5em;
         margin: 10px 20px;
     }
 }
 
-@media(max-width: 1090px)
-{
-    #container
-    {
+@media(max-width: 1090px) {
+    #container {
         display: grid;
         grid-template-columns: 1fr 2fr 0.5fr;
     }
-    #search
-    {
+
+    #search {
         display: none;
     }
 }
-@media(max-width: 750px)
-{
-    #shopName
-    {
+
+@media(max-width: 750px) {
+    #shopName {
         font-size: 28px;
     }
-    #collection
-    {
+
+    #collection {
         font-size: 12px;
     }
-    .userIcon
-    {
+
+    .userIcon {
         font-size: 35px;
     }
-    .addedToCart
-    {
+
+    .addedToCart {
         font-size: 1.2em;
         margin: 10px 20px;
     }
 }
 
-@media(max-width: 650px)
-{
-    #shopName
-    {
+@media(max-width: 650px) {
+    #shopName {
         font-size: 24px;
     }
-    #collection
-    {
+
+    #collection {
         font-size: 10px;
     }
-    .userIcon
-    {
+
+    .userIcon {
         font-size: 30px;
     }
 }
-@media(max-width: 550px)
-{
-    #container 
-    {
+
+@media(max-width: 550px) {
+    #container {
         padding: 20px 25px;
     }
 }
 
-/* ----------------------------- MEDIA QUERY DO BADGE--------------------------- */
+/* ----------------------------- MEDIA QUERY DO BADGE --------------------------- */
 
-/* badge media */
 @media (max-width: 1300px) {
     #badge {
         right: 150px;
     }
 }
+
 @media (max-width: 1212px) {
     #badge {
         right: 96px;
     }
 }
+
 @media (max-width: 750px) {
     #badge {
         right: 87px;
@@ -213,6 +220,7 @@ body
         top: 12px;
     }
 }
+
 @media (max-width: 550px) {
     #badge {
         right: calc(100% - 74px);
