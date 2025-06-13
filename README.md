@@ -36,6 +36,8 @@ Catalogo-de-Filmes/
 - Cadastro e login de usuários com validação.
 - Listagem de filmes por categoria com agrupamento.
 - Interface simples e responsiva.
+![image](https://github.com/user-attachments/assets/ac2a0166-5f19-4d8c-8275-47ddcda6d16d)
+
 
 ### Back-end (Node.js + Express)
 
@@ -46,6 +48,8 @@ Catalogo-de-Filmes/
   - Listagem de filmes e consulta por ID
 - Armazenamento em arquivos `.json`
 - Documentação interativa com Swagger (`/api-docs`)
+![image](https://github.com/user-attachments/assets/fc72b089-b112-43d6-b5eb-479b0ceb7db9)
+
 
 ### Swagger
 
