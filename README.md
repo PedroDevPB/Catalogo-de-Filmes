@@ -1,7 +1,6 @@
 # 🎬 Catálogo de Filmes
 
 Projeto completo de um sistema web para listagem, categorização e gerenciamento de filmes, com funcionalidades de autenticação de usuários, persistência local (via arquivos JSON) e documentação interativa com Swagger.
-![image](https://github.com/user-attachments/assets/da7bd03a-0f73-4c4c-a3bd-22f21913c703)
 
 
 ## 📁 Estrutura do Projeto
@@ -79,7 +78,7 @@ npm install
 node app.js
 ```
 
-4. Acesse o front-end abrindo os arquivos `.html` diretamente no navegador ou servindo com um servidor local.
+4. Acesse o front-end abrindo os arquivos `.html` diretamente no navegador.
 
 ## 🧪 Rotas da API
 
@@ -91,6 +90,8 @@ node app.js
 | DELETE | /usuarios/:email   | Remove usuário pelo e-mail         |
 | GET    | /filmes            | Lista todos os filmes              |
 | GET    | /filmes/:id        | Retorna filme por ID               |
+
+![image](https://github.com/user-attachments/assets/da7bd03a-0f73-4c4c-a3bd-22f21913c703)
 
 ## 🛠️ Tecnologias
 
