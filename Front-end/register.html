@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Cadastro - Crie sua conta</title>
+</head>
+
+<body>
+    <form id="register-form">
+        <div class="form-field">
+            <div id="logo">NETFLIX</div>
+
+            <div><label>Nome completo</label></div>
+            <input type="text" name="name" id="name" oninput="onChangeName()" placeholder="Seu nome completo">
+            <h5 class="error" id="name-required-error">*Nome é obrigatório</h5>
+        </div>
+
+        <div class="form-field">
+            <div><label>E-mail</label></div>
+            <input type="email" name="email" id="email" oninput="onChangeEmail()" placeholder="seu@email.com">
+            <h5 class="error" id="email-required-error">*Email é obrigatório</h5>
+            <h5 class="error" id="email-invalid-error">*Email é inválido</h5>
+        </div>
+
+        <div class="form-field">
+            <div><label>Senha</label></div>
+            <input type="password" name="password" id="password" oninput="onChangePassword()" placeholder="Crie uma senha">
+            <h5 class="error" id="password-required-error">*Senha é obrigatória</h5>
+            <h5 class="error" id="password-too-short-error">*A senha deve ter no mínimo 6 caracteres</h5>
+        </div>
+
+        <div class="form-field">
+            <div><label>Confirmar senha</label></div>
+            <input type="password" name="confirm-password" id="confirm-password" oninput="onChangeConfirmPassword()" placeholder="Repita a senha">
+            <h5 class="error" id="confirm-password-required-error">*Confirmação obrigatória</h5>
+            <h5 class="error" id="passwords-dont-match-error">*As senhas não coincidem</h5>
+        </div>
+
+        <div>
+            <button type="submit" class="solid" id="register-button" disabled>Registrar</button>
+        </div>
+
+        <div>
+            <button type="button" class="outline" onclick="window.location.href='login.html'">Já tenho conta</button>
+        </div>
+    </form>
+
+    <script src="validationUser.js"></script>
+    <script src="scriptRegister.js"></script>
+</body>
+
+</html>

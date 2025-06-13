@@ -9,18 +9,18 @@ function onChangePassword() {
     togglePasswordsErrors();
 }
 
-//caso o campo de email esteja vazio ou não seja válido retorna uma mensagem.
+// Se o campo de email estiver vazio retorna uma mensagem.
 function toggleEmailErrors() {
     const email = form.email().value;
 
-    //*Usando o operador ternário é uma forma condensada de usar o if else, pois ele retorna o 'none' se a condição for true e 'block' se for false.*
+    // Usando o operador ternário é uma forma condensada de usar o if else, pois ele retorna o 'none' se a condição for true e 'block' se for false.*
     form.emailRequiredError().style.display = email ? "none" : "block";
 
     form.emailInvalidError().style.display = validateEmail(email) ? "none" : "block";
 
 
 }
-// caso o campo de senhas esteja vazio ele retorna uma mensagem informando que o campo precisa ser preenchido.
+// Caso o campo de senhas esteja vazio ele retorna uma mensagem informando que o campo precisa ser preenchido.
 function togglePasswordsErrors() {
 
     const password = form.password().value;
@@ -69,4 +69,3 @@ const form = {
     passwordRequiredError: () => document.getElementById("password-required-error"),
     recoverPasswordButton: () => document.getElementById("recover-password-button"),
 }
-
