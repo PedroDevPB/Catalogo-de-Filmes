@@ -35,7 +35,33 @@ function registrarUsuario(req, res) {
   }
 }
 
+function deletarUsuario(req, res) {
+  const email = req.params.email;
+
+  try {
+    if (!fs.existsSync(filePath)) return res.status(404).json({ error: 'Base de usuários não encontrada.' });
+
+    const data = fs.readFileSync(filePath, 'utf-8');
+    let usuarios = JSON.parse(data);
+    const inicial = usuarios.length;
+
+    usuarios = usuarios.filter(user => user.email !== email);
+
+    if (usuarios.length === inicial) {
+      return res.status(404).json({ error: 'Usuário não encontrado.' });
+    }
+
+    fs.writeFileSync(filePath, JSON.stringify(usuarios, null, 2));
+    res.status(200).json({ message: 'Usuário deletado com sucesso.' });
+
+  } catch (error) {
+    res.status(500).json({ error: 'Erro ao deletar usuário.' });
+  }
+}
+
+
 module.exports = {
   listarUsuarios,
-  registrarUsuario
+  registrarUsuario,
+  deletarUsuario
 };

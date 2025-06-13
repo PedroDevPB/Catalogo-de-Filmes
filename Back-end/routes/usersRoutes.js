@@ -1,9 +1,9 @@
-
 const express = require('express');
 const router = express.Router();
 const {
   listarUsuarios,
-  registrarUsuario
+  registrarUsuario,
+  deletarUsuario
 } = require('../controllers/usuariosController');
 
 /**
@@ -40,5 +40,24 @@ router.get('/', listarUsuarios);
  *         description: Usuário registrado com sucesso.
  */
 router.post('/', registrarUsuario);
+
+/**
+ * @swagger
+ * /usuarios/{email}:
+ *   delete:
+ *     summary: Remove um usuário pelo e-mail
+ *     parameters:
+ *       - in: path
+ *         name: email
+ *         required: true
+ *         schema:
+ *           type: string
+ *     responses:
+ *       200:
+ *         description: Usuário deletado com sucesso
+ *       404:
+ *         description: Usuário não encontrado
+ */
+router.delete('/:email', deletarUsuario);
 
 module.exports = router;
