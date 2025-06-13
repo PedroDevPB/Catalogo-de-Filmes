@@ -96,5 +96,47 @@
     "descricao": "Um exorcismo aterrorizante.",
     "imagem": "css/back.png",
     "categoria": "Terror"
+  },
+  {
+    "id": 15,
+    "titulo": "A Bela e a Fera",
+    "descricao": "Um conto de amor encantado.",
+    "imagem": "css/back.png",
+    "categoria": "Animação"
+  },
+  {
+    "id": 16,
+    "titulo": "Jurassic Park",
+    "descricao": "Dinossauros trazidos de volta à vida.",
+    "imagem": "css/back.png",
+    "categoria": "Aventura"
+  },
+  {
+    "id": 17,
+    "titulo": "O Labirinto do Fauno",
+    "descricao": "Uma jovem em um mundo mágico e sombrio.",
+    "imagem": "css/back.png",
+    "categoria": "Fantasia"
+  },
+  {
+    "id": 18,
+    "titulo": "Mad Max: Estrada da Fúria",
+    "descricao": "Uma luta pela sobrevivência em um mundo pós-apocalíptico.",
+    "imagem": "css/back.png",
+    "categoria": "Ação"
+  },
+  {
+    "id": 19,
+    "titulo": "O Grande Lebowski",
+    "descricao": "Uma comédia sobre um cara chamado 'Dude'.",
+    "imagem": "css/back.png",
+    "categoria": "Comédia"
+  },
+  {
+    "id": 20,
+    "titulo": "Pulp Fiction: Tempo de Violência",
+    "descricao": "Histórias interligadas de crime e vingança.",
+    "imagem": "css/back.png",
+    "categoria": "Crime"
   }
 ]

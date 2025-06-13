@@ -22,6 +22,8 @@ body {
   text-align: center;
   background-color: #111;
   color: white;
+  margin-left: 20px;
+  border-radius: 8px;
 }
 
 .card img {

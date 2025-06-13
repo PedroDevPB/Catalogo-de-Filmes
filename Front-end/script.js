@@ -38,7 +38,6 @@ function searchMovies() {
   });
 }
 
-// Página categorias.html
 const categorias = document.getElementById('categorias');
 
 if (categorias) {
@@ -53,7 +52,7 @@ if (categorias) {
         agrupados[cat].push(filme);
       });
 
-      for (const categoria in agrupados) {
+      Object.keys(agrupados).sort().forEach(categoria => {
         const secao = document.createElement('section');
         secao.classList.add('categoria-bloco');
 
@@ -78,7 +77,7 @@ if (categorias) {
         secao.appendChild(titulo);
         secao.appendChild(linha);
         categorias.appendChild(secao);
-      }
+      });
     })
     .catch(error => console.error("Erro ao carregar categorias:", error));
 }
